@@ -7,6 +7,9 @@ import { RouterModule } from '@angular/router';
 import { AngularFireModule, } from 'angularfire2';
 import { AngularFireDatabaseModule, } from 'angularfire2/database';
 import { AngularFireAuthModule, } from 'angularfire2/auth';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -38,6 +41,7 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
+    NgbModule.forRoot(),
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'login', component: LoginComponent },
@@ -47,7 +51,8 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
       { path: 'order-success', component: OrderSuccessComponent },
       { path: 'admin/products', component: AdminProductsComponent },
       { path: 'admin/orders', component: AdminOrdersComponent },
-    ])
+    ]),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
