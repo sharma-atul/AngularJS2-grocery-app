@@ -1,6 +1,7 @@
 
 a.navbar-brand {
-  font-size: 16;
+  font-size-adjust: auto;
+  font-size: 48;
   font-weight: bold;
   color: white;
 }
