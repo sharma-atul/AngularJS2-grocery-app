@@ -1,0 +1,10 @@
+
+a.navbar-brand {
+  font-size: 16;
+  font-weight: bold;
+  color: white;
+}
+
+.dropdown-toggle{
+  cursor: pointer;
+}

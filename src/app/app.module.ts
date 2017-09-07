@@ -51,6 +51,7 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
       { path: 'order-success', component: OrderSuccessComponent },
       { path: 'admin/products', component: AdminProductsComponent },
       { path: 'admin/orders', component: AdminOrdersComponent },
+      { path: 'my-orders', component: MyOrdersComponent },
     ]),
 
   ],
